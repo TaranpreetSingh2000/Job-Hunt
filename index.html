@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Job Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header-->
+
+    <section id="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="far fa-handshake"></i>JOBHUNT</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="job.html">ALL JOBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company.html">COMPANIES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GOVT.JOBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INTERNSHIPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT US</a>
+                    </li>
+                    <div class="mx-4">
+                        <button class="btn btn light" data-toggle="modal" data-target="#Login inModal">
+                    Login in
+                  </button>
+                        <div class="modal fade" id="Login inModal" tabindex="-1" role="dialog" aria-labelledby="Login inModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Login inModalLabel">
+                                            Login in to Jobhunt
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                                    </div>
+                                    <div class="loginff modal-body">
+                                        <form>
+                                            <div class="mb-2">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                              />
+                              <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="exampleInputPassword1"
+                              />
+                            </div>
+                            <div class="mb-3 form-check">
+                              <div class="sign">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="exampleCheck1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="exampleCheck1"
+                                  >Check me out</label
+                                >
+                              </div>
+                            </div>
+                            <div class="sign">
+                              <button type="submit" class="btn btn-primary">
+                                Submit
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Successfully Login
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn light"
+                    data-toggle="modal"
+                    data-target="#Sign UpModal"
+                  >
+                    Sign up
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="Sign UpModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="Sign UpModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="Sign UpModalLabel">
+                            Get a Jobhunt Account
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <div class="sign">
+                                  <label for="inputEmail4">Email</label>
+                                            </div>
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="sign">
+                                            <label for="inputPassword4">Password</label>
+                                        </div>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="sign">
+                                        <label for="inputAddress">Address</label>
+                                    </div>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="sign">
+                                        <label for="inputAddress2">Address 2</label>
+                                    </div>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <div class="sign">
+                                            <label for="inputCity">City</label>
+                                        </div>
+                                        <input type="text" class="form-control" id="inputCity" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <div class="sign">
+                                            <label for="inputState">State</label>
+                                        </div>
+                                        <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Delhi</option>
+                                  <option>Chandigarh</option>
+                                  <option>Ajmer</option>
+                                </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <div class="sign">
+                                            <label for="inputZip">Zip</label>
+                                        </div>
+                                        <input type="text" class="form-control" id="inputZip" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <div class="sign">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                            <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                  </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sign">
+                                    <button type="submit" class="btn btn-primary">
+                                Sign Up
+                              </button>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                          </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </ul>
+        </div>
+        </div>
+        </nav>
+        </div>
+
+        <div class="banner text-centre">
+            <h1>JOBS AROUND YOU</h1>
+        </div>
+    </section>
+
+    <div class="search-job text-centre">
+        <input type="text" class="form-control" placeholder="search-keyword" />
+        <input type="text" class="form-control" placeholder="company" />
+        <input type="text" class="form-control" placeholder="location" />
+        <input type="button" class="btn btn-primary" value="Find job" />
+    </div>
+
+    <!-- top-recruiters-->
+
+    <section id="recruiters">
+        <div class="container text-centre">
+            <h3>TOP RECRUITERS</h3>
+
+            <div>
+                <img src="Images/dell.jpg" />
+                <img src="Images/oracle.jpg" alt="" />
+                <img src="Images/cisco.jpg" alt="" />
+                <img src="Images/amazon.jpg" alt="" />
+                <img src="Images/infosys.jpg" alt="" />
+            </div>
+
+            <div>
+                <img src="Images/adobe.jpg" alt="" />
+                <img src="Images/byjus.jpg" alt="" />
+                <img src="Images/danone.jpg" alt="" />
+                <img src="Images/fedex.jpg" alt="" />
+                <img src="Images/forbes.jpg" alt="" />
+            </div>
+
+            <div>
+                <img src="Images/ibm.jpg" alt="" />
+                <img src="Images/idc.jpg" alt="" />
+                <img src="Images/indeed.jpg" alt="" />
+                <img src="Images/mcrosoft.jpg" alt="" />
+                <img src="Images/tnw.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!------------Recent jobs---------->
+
+    <section id="jobs">
+        <div class="conatiner">
+            <h5>RECENT UPDATES</h5>
+            <div class="company-details">
+                <div class="job-update">
+                    <h4><b>Seasoned Senior Python Developer (Fresher)</b></h4>
+                    <p>XYZ Solution Pvt Ltd</p>
+                    <i class="fas fa-briefcase"></i><span> 0-1 yrs</span><br />
+                    <i class="fas fa-rupee-sign"></i><span> 3.5 - 6.0 Lacs p.a.</span
+            ><br />
+            <i class="fas fa-map-marker"></i><span> Bangalore</span><br />
+
+                    <p>
+                        Skills <i class="fa fa-angle-double-right"></i
+              ><small> Java</small> <small>Python</small
+              ><small> HTML,CSS ,JS</small><small> React</small>
+            </p>
+            <p>
+              Description<i class="fa fa-angle-double-right"></i>Main Responsibilities of a Python Developer:::
+                    </p>
+                    <p>* Writing effective and scalable Python codes.</p>
+                    <p>* Designing and implementing robust applications.</p>
+                    <p>
+                        * Debugging applications to ensure low-latency and high-availability.
+                    </p>
+                    <p>* Integrating user-facing elements with server-side logic.</p>
+                    <p>* Implementing security and data protection.</p>
+                    <a href="https://snaphunt.com/resources/job-descriptions/python-developer-job-description"><u>Read more</u></a
+            >
+          </div>
+
+          <div class="apply-btn">
+            <button type="button" class="btn btn-primary btn-sm">Apply</button>
+          </div>
+        </div>
+
+        <div class="company-details">
+          <div class="job-update">
+            <h4><b> Senior Android App Developer (Fresher)</b></h4>
+            <p>ProCivil Pvt Ltd</p>
+            <i class="fas fa-briefcase"></i><span> 0-2 yrs</span><br />
+            <i class="fas fa-rupee-sign"></i><span> 2.5 - 10.0 Lacs p.a.</span
+            ><br />
+            <i class="fas fa-map-marker"></i><span> Chandigarh</span><br />
+
+            <p>
+              Skills <i class="fa fa-angle-double-right"></i
+              ><small> Java</small> <small>REST API</small
+              ><small> Android</small><small> React</small>
+            </p>
+            <p>
+              Description<i class="fa fa-angle-double-right"></i>Main
+              Responsibilities of a Android Developer:::
+            </p>
+            <p>
+              * Working on finalizing APIs and integrating the app with the
+              back-end system
+            </p>
+            <p>
+              * Working on app development work as per wireframes and
+              architecture design.
+            </p>
+
+            <a
+              href="https://internshala.com/internship/detail/android-app-development-work-from-home-job-internship-at-procivil1633173553"
+              ><u>Read more</u></a
+            >
+          </div>
+
+          <div class="apply-btn">
+            <button type="button" class="btn btn-primary btn-sm">Apply</button>
+          </div>
+        </div>
+
+        <div class="company-details">
+          <div class="job-update">
+            <h4><b> Mobile App Development (Fresher)</b></h4>
+            <p>Advance Technology Systems</p>
+            <i class="fas fa-briefcase"></i><span> 0-2 yrs</span><br />
+            <i class="fas fa-rupee-sign"></i><span> 3.5 - 9.0 Lacs p.a.</span
+            ><br />
+            <i class="fas fa-map-marker"></i><span> Bangalore</span><br />
+
+            <p>
+              Skills <i class="fa fa-angle-double-right"></i
+              ><small> Java</small> <small>Flutter</small><small>Android</small
+              ><small> React</small>
+            </p>
+            <p>
+              Description<i class="fa fa-angle-double-right"></i>Main
+              Responsibilities of a Mobile App Developer:::
+            </p>
+
+            <p>
+              *Advance Technology Systems (ATS) is a software consulting and
+              development firm, offering cutting-edge and targeted insights to
+              support competitive decision-making. ATS has a track record in
+              projects of government, private, and public sectors for local and
+              international organizations. More than 5 years old, ATS software
+              is already running successfully at more than 800+ restaurants,
+              450+ hotels, and 140 food courts.
+            </p>
+            <a href="https://atsonline.in/"><u>Read more</u></a>
+                </div>
+
+                <div class="apply-btn">
+                    <button type="button" class="btn btn-primary btn-sm">Apply</button>
+                </div>
+            </div>
+
+            <div class="company-details">
+                <div class="job-update">
+                    <h4><b> Senior Web Developer (Fresher)</b></h4>
+                    <p>Grafieks Analytics Limited</p>
+                    <i class="fas fa-briefcase"></i><span> 0-2 yrs</span><br />
+                    <i class="fas fa-rupee-sign"></i><span> 5.0 - 15.5 Lacs p.a.</span
+            ><br />
+            <i class="fas fa-map-marker"></i><span> Delhi</span><br />
+
+                    <p>
+                        Skills <i class="fa fa-angle-double-right"></i>
+                        <small>REST API</small><small>MY SQL</small
+              ><small> React.JS</small>
+                    </p>
+                    <p>
+                        Description<i class="fa fa-angle-double-right"></i>Main Responsibilities of a Web Developer:::
+                    </p>
+                    <p>* Working on full-stack development of our web application.</p>
+                    <p>* Developing new user-facing features using ReactJS.</p>
+                    <p>* Working with MySQL.</p>
+                    <p>* Integrating APIs with the other web applications.</p>
+                    <p>
+                        * Collaborating with the UI/UX team, understand the design and code it.
+                    </p>
+                    <p>
+                        * Creating and maintaining source code and technical documentation.
+                    </p>
+                    <a href="https://internshala.com/internship/detail/web-development-work-from-home-job-internship-at-grafieks-analytics-limited1633113975"><u>Read more</u></a
+            >
+          </div>
+
+          <div class="apply-btn">
+            <button type="button" class="btn btn-primary btn-sm">Apply</button>
+          </div>
+        </div>
+        <ul class="page-link text-centre">
+          <li class="left-arrow">&#8592;</li>
+          <li class="active">1</li>
+          <li>2</li>
+          <li>4</li>
+          <li>5</li>
+          <li class="right-arrow">&#8594;</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--------------Site Stats----------->
+
+    <section id="site-stats">
+      <div class="container text-centre">
+        <h3>JOBHUNT SITE STATS</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="stats-box">
+                  <i class="fa fa-user"></i><span><small> 100k +</small></span>
+                  <p>Job Seekers</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="stats-box">
+                  <i class="fab fa-slideshare"></i
+                  ><span><small> 500 +</small></span>
+                  <p>Employers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="stats-box">
+                  <i class="far fa-hand-peace"></i
+                  ><span><small> 10k +</small></span>
+                  <p>Active Jobs</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="stats-box">
+                  <i class="far fa-building"></i
+                  ><span><small> 400 +</small></span>
+                  <p>Companies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------App banner---------->
+
+    <section id="app-banner" class="text-centre">
+      <h1>Find Jobs On Mobiles, Download Jobhunt App</h1>
+      <img src="Images/app-store.jpg" />
+      <img src="Images/google-play.jpg" />
+    </section>
+
+    <!---------Footer-------->
+
+    <section id="footer" class="text-centre">
+      <h2><i class="far fa-handshake">JOBHUNT</i></h2>
+    </section>
+    <br />
+
+    <hr />
+
+    <div class="site-info margin-rule">
+      <div id="container " class="Logou">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <br />
+      <p class="end">© 2021 JOBHUNT | VAT Number: IT118768671005</p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
